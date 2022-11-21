@@ -86,7 +86,9 @@ public class MultiplyAmountOfItemsInCart {
         } catch (NoSuchElementException e){
             e.getSupportUrl();
         }
-
+        
+        
+//      driver.quit();
 
     }
 }
