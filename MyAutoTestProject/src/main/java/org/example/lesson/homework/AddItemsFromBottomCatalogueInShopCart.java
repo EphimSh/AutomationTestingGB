@@ -25,7 +25,7 @@ public class AddItemsFromBottomCatalogueInShopCart {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.get("https://primekraft.ru");
 
-        //Annoying pop-up closing
+        //Waiting for annoying pop-up appends
         new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[class*='form_content']")));
         try{
             driver.findElement(By.cssSelector("div[class*='btn_close']")).click();
@@ -79,7 +79,7 @@ public class AddItemsFromBottomCatalogueInShopCart {
         new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.urlContains("/personal/cart/"));
 
 
-
+//      Add more items from the bottom catalog 
         try{
             driver.findElement(By.cssSelector("div[class*='catalog-section'] > div > div:nth-child(1) a[class*='btn-rounded']")).click();
             driver.findElement(By.cssSelector("div[class*='catalog-section'] > div > div:nth-child(2) a[class*='btn-rounded']")).click();
