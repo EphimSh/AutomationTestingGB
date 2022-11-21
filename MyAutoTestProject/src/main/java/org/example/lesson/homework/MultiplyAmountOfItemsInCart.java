@@ -23,7 +23,7 @@ public class MultiplyAmountOfItemsInCart {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.get("https://primekraft.ru");
 
-        //Annoying pop-up closing
+        //Waiting for annoying pop-up appends
         new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[class*='form_content']")));
         try{
             driver.findElement(By.cssSelector("div[class*='btn_close']")).click();
