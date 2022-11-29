@@ -1,0 +1,6 @@
+JUnitExample\Main.class
+org\example\AutomationTest\AuthNegative.class
+org\example\Main.class
+JUnitExample\Triangle.class
+org\example\AutomationTest\AuthAndAddItemToTheShopBasket.class
+org\example\AutomationTest\AuthPositive.class
